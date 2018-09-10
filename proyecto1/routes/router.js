@@ -45,8 +45,6 @@ module.exports = (app, passport) => {
     failureFlash:true  
   })); 
 
-  
-
   app.get('/registrar', (req,res) => {
       res.render('registrar',{
         message: req.flash('mensajeRegistro')

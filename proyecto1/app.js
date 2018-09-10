@@ -12,10 +12,29 @@ var module       = require('module');
 var passport     = require('passport');
 var compression  = require('compression');
 var mcache = require('memory-cache');
+var monitor = require("os-monitor");
 
 const { url } =require('./config/database');
 mongoose.connect(url,{
   useMongoClient:true
+});
+
+//monitor
+monitor.start();
+
+// define handler that will always fire every cycle
+monitor.on('monitor', function(event) {
+  console.log(event.type, ' This event always happens on each monitor cycle!');
+});	
+
+// define handler for a too high 1-minute load average
+monitor.on('loadavg1', function(event) {
+  console.log(event.type, ' Load average is exceptionally high!');
+});
+
+// define handler for a too low free memory
+monitor.on('freemem', function(event) {
+  console.log(event.type, 'Free memory is very low!');
 });
 
 // var DATABASE_URL = process.env.DATABASE_URL || 'localhost';
