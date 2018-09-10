@@ -27,6 +27,7 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "memory-cache": "^0.2.0",
-    "compression" : "^1.7.3"
+    "compression" : "^1.7.3",
+    "os-monitor" : "^1.0.6"
   }
 }
