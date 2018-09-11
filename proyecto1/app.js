@@ -13,6 +13,30 @@ var passport     = require('passport');
 var compression  = require('compression');
 var mcache = require('memory-cache');
 var monitor = require("os-monitor");
+var nodemailer = require('nodemailer');
+
+//Creamos el objeto de transporte
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'egonzarias21@gmail.com',
+    pass: '385bc45a53'
+  }
+});
+
+var mailOptions = {
+  from: 'egonzarias21@gmail.com',
+  to: 'egonza21@eafit.edu.co',
+  subject: 'Alerta en el servidor',
+  text: 'Alerta, la capacidad de computo esta llegando a su limite'
+};
+
+var mailOptions2 = {
+  from: 'egonzarias21@gmail.com',
+  to: 'egonza21@eafit.edu.co',
+  subject: 'Alerta en el servidor',
+  text: 'Alerta, poca memoria en el servidor'
+};
 
 const { url } =require('./config/database');
 mongoose.connect(url,{
@@ -24,17 +48,33 @@ monitor.start();
 
 // define handler that will always fire every cycle
 monitor.on('monitor', function(event) {
-  console.log(event.type, ' This event always happens on each monitor cycle!');
+	console.log(event.type, 'corriendo')
 });	
 
 // define handler for a too high 1-minute load average
 monitor.on('loadavg1', function(event) {
-  console.log(event.type, ' Load average is exceptionally high!');
+  	console.log(event.type, ' Load average is exceptionally high!');
+  	console.log('enviando mail')
+  	transporter.sendMail(mailOptions, function(error, info){
+	  if (error) {
+	    console.log(error);
+	  } else {
+	    console.log('Email enviado: ' + info.response);
+	  }
+	});
 });
 
 // define handler for a too low free memory
 monitor.on('freemem', function(event) {
-  console.log(event.type, 'Free memory is very low!');
+	console.log(event.type, 'Free memory is very low!');
+	console.log('enviando mail')
+	transporter.sendMail(mailOptions2, function(error, info){
+		if (error) {
+	   		console.log(error);
+		} else {
+			console.log('Email enviado: ' + info.response);
+		}
+	});
 });
 
 // var DATABASE_URL = process.env.DATABASE_URL || 'localhost';
