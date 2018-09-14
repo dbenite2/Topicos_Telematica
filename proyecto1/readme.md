@@ -1,4 +1,4 @@
-# Primer proyecto de la materia Topicos Especiales en Telemática
+# Proyecto de la materia Topicos Especiales en Telemática
 
 Objetivo:
 
@@ -27,6 +27,46 @@ __Condiciones Especiales__
    Email Address []:dbenite2@eafit.edu.co
    ```
    - Con esto listo , ejecutamos la aplicacion en su carpeta.
+   
+__Creación del cluster (QA Disponibilidad)__
+
+Para poder replicar el QA de disponibilidad es necesario seguir los siguientes pasos 
+* Definir las direcciones entre las que los nodos se van a escuchar entre si:
+   para esto vamos a modificar el archivo hosts ubicado en la carpeta etc de las maquinas 
+   ```
+    $ sudo emacs /etc/hosts
+   ```
+   y vamos a colocar lo siguiente: 
+   * "direccion ip maquina1" "dns publico" managernode
+   * "direccion ip maquina2" "dns publico" workernode1
+   * "direccion ip maquina3" "dns publico" workernode2
+   
+   por ultimo, vamos a configurar los nombres de las maquinas segun el archivo 
+   
+   ```
+   $ sudo hostnamectl set-hostname managernode 
+   ```
+   es necesario realizar esto en cada maquina con su respectivo nombre 
+   
+* Instalar docker engine 
+   Para esto, basta con buscar como instalar este servicio en su SO 
+   
+* Abrir los puertos para que los nodos se escuchen entre si:
+   Vamos a realizar el siguiente comando para los siguientes puertos 
+   ```
+   $ firewall-cmd --permanent --add-port=2376/tcp 
+   ```
+   * 2377/tcp
+   * 7946/tcp
+   * 7946/udp
+   * 4789/upd
+   * 80/tcp 
+   
+   luego realizamos el siguiente comando 
+   ```
+   $ firewall-cmd --reload
+   ```
+   
 
 __Ejecucion de la aplicacion__
 * Es necesario tener instalado en la máquina los servicios de Docker y Docker-compose
