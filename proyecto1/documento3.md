@@ -60,3 +60,21 @@ http://10.131.137.231
  
  ## 4. Marco-referencia-v3: Versión final de las bases conceptuales, patrones, mejores prácticas, etc de los atributos de calidad seleccionados.
  
+ ### Disponibilidad (confiabilidad y recuperación)
+
+El principal objetivo de este QA es permitir soportar las fallas de tal modo que el servicio ofrecido por dicho sistema continue siendo 
+compatible con sus especificaciones.
+De igual forma implica que una falla se vuelve amenaza cuando esta afecta a los servidores del sistema, de tal modo que las especificaciones del sistema
+dejan de funcionar.
+
+Algunas estrategias y tácticas:
+
+* **Detección de fallas**
+* **Recuperación de fallas**
+  * **Reparation and repair**
+  * **Reintroduction**
+* **prevencíon de fallas**
+
+
+### Rendimiento
+ 
