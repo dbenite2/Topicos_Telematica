@@ -91,6 +91,13 @@ Durante gran parte de la historia de la ingeniería de software, el rendimiento 
 #### Análisis QA rendimiento
 Para el desarrollo de este QA, primero se empezó por analizar donde podría presentar fallos de rendimiento, luego de una exploración a los posibles cuellos de botella que podrían presentarse ya sean a nivel de servidor, programación o datos, se tomó la decisión de aplicar las técnicas a la parte del servidor.
 
+#### Diseño
+Para el diseño aplicaremos las siguientes técnicas
+* Caché del lado del servidor y la aplicaremos solo en la ruta(path) de /map porque es la mas visualizada y que mas elementos de carga tiene.
+* Volverla la página responsive, esto lo haremos para tener una mejor visualización en dispositivos móviles y evitar que un dispositivo pequeño cargue algo que es para una máquina de escritorio.
+*	Comprimir los paquetes que se envían.
+*	Alertas proactivas, estas son alertas que envían una notificación a través de correo cada que el servidor está llegando a su limite de CPU y memoria. 
+
 ### Bibliografía
 [1] 	L. Bass, P. Clements and R. Kazman, Software Architecture in Practice, Third Edition, Addison-Wesley Professional, 2012.
 
