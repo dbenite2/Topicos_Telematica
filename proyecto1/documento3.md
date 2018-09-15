@@ -59,7 +59,7 @@ http://10.131.137.231
  * **Disponibilidad:** Las pruebas para disponibilidad serán realizadas con el enfoque de la independcencia de nodos entre sí. La planeación consiste en desconectar un nodo y verificar que los demas nodos sigan funcionando.
  * **Rendimiento:**  Para las pruebas se utilizó Jmeter donde al analizar los resultados se presentó una mejora en el rendimiento ya que, si nos fijamos en la desviación estándar de 100 antes de aplicar las técnicas y 100 después de aplicarlas, notamos que se redujo y esto evidencia una mejora porque significa que los tiempos de respuestas están más cerca del promedio entonces se eliminan los picos donde el tiempo de respuesta es muy lento.
  
- [Gráfica de pruebas de rendimiento](/Jmeter/jmeterexcel.png)
+ [Gráfica de pruebas de rendimiento](proyecto1/Jmeter/jmeterexcel.png)
  * **Seguridad:**
  
  ## 4. Marco-referencia-v3: Versión final de las bases conceptuales, patrones, mejores prácticas, etc de los atributos de calidad seleccionados.
