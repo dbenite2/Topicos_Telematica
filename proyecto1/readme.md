@@ -68,10 +68,39 @@ Para poder replicar el QA de disponibilidad es necesario seguir los siguientes p
    ```
    
 __Implementación QA rendimiento__
-La implementación la haremos a través de guías encontradas en internet que van a dar mas claridad de que hacen, como lo hacen y para que lo hacen.
+
+La implementación la haremos a través de guías encontradas en internet que fueron las seguidas para implementar este QA y que nos van a dar mas claridad de que hacen, como lo hacen y para que lo hacen.
 Las guías usadas fueron:
 *	Caché del lado del servidor:  https://goenning.net/2016/02/10/simple-server-side-cache-for-expressjs/
 *	Responsive: https://www.w3schools.com/css/css_rwd_viewport.asp
+*  Compression: Para este debemos instalar el modulo compression asi `npm install compression` y añadir las siguientes líneas a nuestro código
+ ```
+   var compression = require('compression');
+   var express = require('express');
+   var app = express();
+   app.use(compression());
+
+ ```
+ *  Para las alertas proactivas necesitaremos la mezcla de dos módulos, uno que nos monitoree el consumo de recursos y otro para enviar correos.
+Primero debemos ver como instalar y usar los dos módulos a través de los siguientes enlaces   os-monitor  https://www.npmjs.com/package/os-monitor   y nodemailer  https://cursos.mejorcodigo.net/article/enviar-correo-electronico-con-nodejs-17
+
+Luego de haber entendido el funcionamiento de los dos módulos necesitaremos hacer la combinación de los dos y lo haremos así, tomare como ejemplo el monitoreo de CPU. 
+
+```
+monitor.on('loadavg1', function(event) {
+  	console.log(event.type, ' Load average is exceptionally high!');
+  	console.log('enviando mail')
+  	transporter.sendMail(mailOptions, function(error, info){
+	  if (error) {
+	    console.log(error);
+	  } else {
+	    console.log('Email enviado: ' + info.response);
+	  }
+	});
+});
+```
+Para permitir que la aplicación envié los correos a través de nuestro Gmail debemos darle permisos desde las configuraciones de la cuenta de Google, nos vamos a “Acceso y seguridad” y después hasta permitir el acceso de aplicaciones menos seguras.
+O damos clic [aquí](https://myaccount.google.com/security) y nos llevará automáticamente a la sección de configuración.  
 
 
 __Ejecucion de la aplicacion__
