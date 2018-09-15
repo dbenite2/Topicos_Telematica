@@ -67,6 +67,12 @@ Para poder replicar el QA de disponibilidad es necesario seguir los siguientes p
    $ firewall-cmd --reload
    ```
    
+__Implementación QA rendimiento__
+La implementación la haremos a través de guías encontradas en internet que van a dar mas claridad de que hacen, como lo hacen y para que lo hacen.
+Las guías usadas fueron:
+*	Caché del lado del servidor:  https://goenning.net/2016/02/10/simple-server-side-cache-for-expressjs/
+*	Responsive: https://www.w3schools.com/css/css_rwd_viewport.asp
+
 
 __Ejecucion de la aplicacion__
 * Es necesario tener instalado en la máquina los servicios de Docker y Docker-compose
