@@ -77,4 +77,13 @@ Algunas estrategias y tácticas:
 
 
 ### Rendimiento
+
+Rendimiento se trata del tiempo y la capacidad del sistema de software para cumplir los requisitos de tiempo. Cuando ocurren eventos (interrupciones, mensajes, solicitudes de usuarios u otros sistemas, o eventos del reloj que marcan el paso del tiempo) el sistema, o algún elemento del sistema, debe responder a ellos a tiempo. Caracterizar los eventos que pueden ocurrir (y cuándo pueden ocurrir) y la respuesta basada en el tiempo del sistema o elemento a esos eventos es la esencia es discutir el rendimiento.
+Los eventos del sistema basados en la web vienen en forma de solicitudes de los usuarios (que suman decenas o decenas de millones) a través de sus clientes, como los navegadores web.
+Para un sistema basado en web, la respuesta deseada puede expresarse como el número de transacciones que pueden procesarse en un minuto. Para el sistema de control del motor, la respuesta puede ser la variación permisible en el tiempo de encendido. En cada caso, el patrón de eventos que llegan y el patrón de respuestas se pueden caracterizar, y esta caracterización forma el lenguaje con el que construir escenarios de rendimiento.
+Durante gran parte de la historia de la ingeniería de software, el rendimiento ha sido el factor determinante en la arquitectura del sistema. Como tal, con frecuencia ha comprometido el logro de todas las demás cualidades. A medida que la relación precio-rendimiento del hardware continúa cayendo en picado y el costo del desarrollo de software continúa aumentando, otras cualidades se han convertido en importantes competidores para el rendimiento. [1]
+
+### Bibliografía
+[1] 	L. Bass, P. Clements and R. Kazman, Software Architecture in Practice, Third Edition, Addison-Wesley Professional, 2012.
+
  
