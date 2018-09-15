@@ -88,6 +88,9 @@ Los eventos del sistema basados en la web vienen en forma de solicitudes de los 
 Para un sistema basado en web, la respuesta deseada puede expresarse como el número de transacciones que pueden procesarse en un minuto. Para el sistema de control del motor, la respuesta puede ser la variación permisible en el tiempo de encendido. En cada caso, el patrón de eventos que llegan y el patrón de respuestas se pueden caracterizar, y esta caracterización forma el lenguaje con el que construir escenarios de rendimiento.
 Durante gran parte de la historia de la ingeniería de software, el rendimiento ha sido el factor determinante en la arquitectura del sistema. Como tal, con frecuencia ha comprometido el logro de todas las demás cualidades. A medida que la relación precio-rendimiento del hardware continúa cayendo en picado y el costo del desarrollo de software continúa aumentando, otras cualidades se han convertido en importantes competidores para el rendimiento. [1]
 
+#### Análisis QA rendimiento
+Para el desarrollo de este QA, primero se empezó por analizar donde podría presentar fallos de rendimiento, luego de una exploración a los posibles cuellos de botella que podrían presentarse ya sean a nivel de servidor, programación o datos, se tomó la decisión de aplicar las técnicas a la parte del servidor.
+
 ### Bibliografía
 [1] 	L. Bass, P. Clements and R. Kazman, Software Architecture in Practice, Third Edition, Addison-Wesley Professional, 2012.
 
