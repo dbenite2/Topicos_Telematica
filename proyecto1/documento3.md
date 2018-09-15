@@ -48,14 +48,18 @@ http://10.131.137.231
  Para el QA de disponibilidad se realizó despliegue en distintos nodos con contenedores conectados entre si por docker Swarm, con el objetivo  de que la aplicación no falle si el nodo en el que se encuentra ubicado
  no falle si el nodo se cae.
  
+ Para el QA de rendimiento se implementó Caché del lado del servidor, compresión de paquetes, se pusieron responsive las vistas y por ultimo se implemento alarmas proactivas para el monitoreo del servidor, todo esto se explica mas a fondo en el README.md del proyecto a través de las guías que se siguieron para el desarrollo del proyecto y de explicación en como fue la forma de su implementación. 
+ 
  ### i. Herramientas utilizadas 
  
- Las herramientas que fueron utilizadas son : framework Express, Auth0 para la autenticación y Google Maps API 
+ Las herramientas que fueron utilizadas son : framework Express, Auth0 para la autenticación, Jmeter para las pruebas, os-monitor, nodemailer para el monitoreo y Google Maps API 
  
  ### b. Esquemas de pruebas para comprobar el atributo de calidad 
  
  * **Disponibilidad:** Las pruebas para disponibilidad serán realizadas con el enfoque de la independcencia de nodos entre sí. La planeación consiste en desconectar un nodo y verificar que los demas nodos sigan funcionando.
- * **Rendimiento:**
+ * **Rendimiento:**  Para las pruebas se utilizó Jmeter donde al analizar los resultados se presentó una mejora en el rendimiento ya que, si nos fijamos en la desviación estándar de 100 antes de aplicar las técnicas y 100 después de aplicarlas, notamos que se redujo y esto evidencia una mejora porque significa que los tiempos de respuestas están más cerca del promedio entonces se eliminan los picos donde el tiempo de respuesta es muy lento.
+ 
+ ![Gráfica de pruebas de rendimiento](https://www.dropbox.com/s/s86diiowtkgvmol/jmeterexcel.png?dl=0)
  * **Seguridad:**
  
  ## 4. Marco-referencia-v3: Versión final de las bases conceptuales, patrones, mejores prácticas, etc de los atributos de calidad seleccionados.
