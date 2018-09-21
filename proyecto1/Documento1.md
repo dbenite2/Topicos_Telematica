@@ -7,7 +7,7 @@
 
 * **QA:** Disponibilidad.   **Encargado:** David Alejandro Benitez Cuevas 
 * **QA:** Rendimiento.      **Encargado:** Efraín Gonzalez Arías 
-* **QA:** Santiago Mendoza. **Encargado:** Santiago Mendoza Montoya
+* **QA:** Seguridad. **Encargado:** Santiago Mendoza Montoya
 
 ### b. Selección de la aplicación basada en Proyecto 1 
 
