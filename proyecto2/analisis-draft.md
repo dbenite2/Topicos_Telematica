@@ -17,7 +17,7 @@ Finalmente se decició ir por realizar la prueba de concepto de BI/DWH moderno
 
 * **Referencias**
 
-[Referencia 1] (ftp://ftp.software.ibm.com/software/es/pdf/BigInsights.pdf)
-[Referencia 2] (https://github.com/jainibhansali/Data-Warehousing-and-Business-Intelligence/blob/master/INFO7290%20DW%20-%20Final%20BI%20Team%20Project%20-%202016-11-16.pdf)
-[Referencia 3] (https://github.com/aws-samples/aws-dbs-refarch-edw)
-[referencia 4] (https://github.com/BigDataManagement/Equipo2)
+* Referencia 1: ftp://ftp.software.ibm.com/software/es/pdf/BigInsights.pdf
+* Referencia 2: https://github.com/jainibhansali/Data-Warehousing-and-Business-Intelligence/blob/master/INFO7290%20DW%20-%20Final%20BI%20Team%20Project%20-%202016-11-16.pdf
+* Referencia 3: https://github.com/aws-samples/aws-dbs-refarch-edw
+* referencia 4: https://github.com/BigDataManagement/Equipo2
