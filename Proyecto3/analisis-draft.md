@@ -1,4 +1,4 @@
-# Proyecto 2 de la materia Topicos especiales en telemática
+# Proyecto 3 de la materia Topicos especiales en telemática
 
 Objetivo: 
 Realizar una prueba de concepto BI/DWH moderno que integre información estructurada (proveniente de bases de datos relacionales) e información no estructurada o semi-estructurada (proveniente de redes sociales, logs, twitter, comentarios, etc)
@@ -8,12 +8,13 @@ Realizar una prueba de concepto BI/DWH moderno que integre información estructu
 * Efraín Gonazalez Arias
 * Santiago Mendoza Montoya 
 
-Despues de analizar las opciones dadas, se terminó  escogiendo 3 temas basados en los gustos generales de los integrantes, los cuales fueron: 
+Despues de analizar las opciones dadas, se terminó  escogiendo 4 temas basados en los gustos generales de los integrantes, los cuales fueron: 
 * Realizar una prueba de concepto o demo sobre Text Analytics con Apache Spark + SparkML
 * Realizar una prueba de concepto BI/DWH moderno que integre información estructurada (proveniente de bases de datos relacionales) e información no estructurada o semi-estructurada (proveniente de redes sociales, logs, twitter, comentarios, etc).
 * Realizar una prueba de concepto o demo sobre Data Streaming utilizando Horton Data Flow (HDF) que permita recolectar datos vivos en fuentes externas.
+* Realizar una prueba de concepto o demo sobre Data Streaming desde Twitter utilizando una de las siguientes tecnologías: Kafka, Storm, Flink o Flume.
 
-Finalmente se decició ir por realizar la prueba de concepto de BI/DWH moderno
+Finalmente se decicidió ir por realizar la prueba de concepto sobre Data Streaming desde Twitter.
 
 * **Referencias**
 
