@@ -1,4 +1,4 @@
-## Primer informe del proyecto 2 de la materia Topicos Especiales en Telématica 
+## Primer informe del proyecto 3 de la materia Topicos Especiales en Telématica 
 
 1. Problema a resolver
 2. Arquitectura preliminar de datos (ciclo de vida, almacenamiento, procesamiento)
@@ -9,10 +9,7 @@
 
 **Problema a resolver** 
 
-Basados en el proyecto que se realizo en la materia Gestión de Datos Grandes el semestre pasado(2018-1)
-se decidió usar el proyecto como base para realizar la prueba de concepto.
-
-El proyecto consiste en tomar datos proveeidos por Netflix , normalizarlos para su posterios analisis y mejor uso , y luego , a traves del uso de las redes sociales (twitter) recopilar información en tiempo real (datos vivos) sobre la opinion publica de las peliculas que constituan los datasets de netflix. 
+Al realizar la busqueda de casos de estudios similares a la problematica propuesta , hallamos el curso __Real-Time Analytics with Apache Storm__ al cual hacemos referencia en nuestro proyecto. El proyecto del curso consiste en realizar analitica de datos en tiempo real con twitter, obteniendo los tweets mas relevantes y que palabras están siendo mas usadas en estos tweets, visualizandolos en un navegador, entre mas se repita la palabra , mas grande se verá la visualización. 
 
 **Fuentes y naturaleza de datos**
 
