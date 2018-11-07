@@ -45,6 +45,6 @@ Para el análisis de esta información transformada no se está utilizando una t
 Los datos de streaming son datos que se generan constantemente a partir de miles de fuentes de datos, que normalmente envían los registros de datos simultáneamente en conjuntos de tamaño pequeño (varios kilobytes). Los datos de streaming incluyen diversos tipos de datos, como archivos de registros generados por los clientes que utilizan sus aplicaciones móviles o web, compras electrónicas, actividades de los jugadores en un juego, información de redes sociales, operaciones bursátiles o servicios geoespaciales, así como telemetría de dispositivos conectados o instrumentación en centros de datos. [1]
 Teniendo claro el concepto de Data Streaming, necesitaremos una fuente de datos la cual analizar, que en nuestro caso específico utilizaremos la red social Twitter, además de otras herramientas como lo son Storm que es un sistema de procesamiento de datos en tiempo real, Vagrant la herramienta para la configuración del entorno soportada por Virtual Box.
 
-######Referencias
+###### Referencias
 
 [1]	Amazon, «Amazon,» [En línea]. Available: https://aws.amazon.com/es/streaming-data/. 
