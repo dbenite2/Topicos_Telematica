@@ -24,7 +24,7 @@ Al realizar la busqueda de casos de estudios similares a la problematica propues
 
 **Sistema de ingesta de datos** 
 
-Para la ingesta de datos tomamos la información de dos fuentes en total, las cuales venían presentes en dos archivos con formato “txt”, para este proyecto en específico los dos archivos tenían un peso de aproximadamente 0,5 GB y 0,2 GB respectivamente. Para poder pasar a hacer la ingesta, primero se debía hacer una limpieza de datos ya que contenían información irrelevante para su análisis, después de la limpieza transformar esa información en archivos JSON para poder hacer la carga en la base de datos MongoDB, todo esto se hizo a través de scripts en PHP que hacían la limpieza y transformación de la data. La carga de la data se hizo por medio de la tecnología Studio 3T que nos permite la importación y exportación de data a una base de datos mediante archivos JSON.
+Para esta prueba de concepto especifica no aplica este punto, porque si partimos de la definición de ingesta de datos, propuesta para el curso tópicos especiales en telemática, la cual es el paso o proceso de pasar de la fuente hasta el almacenamiento nos encontramos con una restricción, y es que la tecnología Apache Storm no hace uso de almacenamiento para la realización de datastreaming al contrario, pasa directo de la fuente de datos hasta su procesamiento.
 
 **Almacenamiento de los datos** 
 
@@ -33,4 +33,4 @@ No se utiliza ninguna tecnología.
 
 **Análisis de datos**
 
-Con el fin de realizar una buena toma de decisiones en cualquier negocio, se recurre al BI a través de varias herramientas que ofrece el mundo del análisis de los datos. Para este caso en particular la herramienta propuesta para hacer inteligencia de negocio sobre la data es Pentaho Data Integration, la cual parte de su funcionalidad es el análisis de cualquier cantidad de datos. Esta herramienta nos permitirá realizar consultas complejas que pueden llegar a responder grandes interrogantes acerca del negocio, en este caso películas de Netflix, de una manera más fácil.
+Para el análisis de esta información transformada no se está utilizando una tecnología específica, dicho análisis es superficial ya que se hace a través de datos visualizados en un browser, esto se logró gracias a una biblioteca de javascript llamada D3 Viz, la cual permite la creación de graficas o infogramas que se conciben a través de los datos procesados por el pipeline de Apache Storm, estos infogramas van variando según los parámetros que reciben, para nuestra prueba de concepto se tiene un infograma que va aumentando el tamaño de la palabra a medida que esta va incrementado en la cantidad de apariciones en los tweets.
