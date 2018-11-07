@@ -14,9 +14,10 @@ Al realizar la busqueda de casos de estudios similares a la problematica propues
 **Fuentes y naturaleza de datos**
 
  Para nuestro caso de estudio, los datos son obtenidos a través de un streaming por parte de twitter, estos datos no son mas que tweets , que corresponden a la cuenta de la cual se estan consumiendo las credenciales. Todos los datos son en tiempo real, esto quiere decir que se obtienen datos como: 
- * tendencias en la red 
- * conversaciones de usuarios (hilos y comentarios)
- * recomendaciones y busquedas   
+ * tendencias en la red. 
+ * conversaciones de usuarios (hilos y comentarios).
+ * recomendaciones y busquedas.   
+ 
  Todos estos datos se van recibiendo instantaneamente a medida que llegan al feed de la cuenta. 
  Los naturaleza de los datos no es mas que Strings, que se modifican a tuplas y topologias en su posterior procesamiento.
  Con respecto a la tecnología a utilizar, se utiliza Twitter como fuente principal y Storm para su procesamiento.
