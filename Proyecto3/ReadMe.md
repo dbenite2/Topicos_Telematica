@@ -16,7 +16,7 @@ Recuerda descargar la versión segun el sistema operativo en el que estés traba
  
  * Despues de todo esté listo, vamos a entrar a la maquina virtual a través del ssh provisto por vagrant: 
     ```
-    ssh vagrant 
+    vagrant ssh
     ``` 
  
  * Nos cercioramos de que si estemos en la maquina virtual y no en nuestra maquina y ejecutamos el siguiente comando: 
