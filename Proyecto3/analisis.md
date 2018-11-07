@@ -11,6 +11,11 @@
 
 Al realizar la busqueda de casos de estudios similares a la problematica propuesta , hallamos el curso __Real-Time Analytics with Apache Storm__ al cual hacemos referencia en nuestro proyecto. El proyecto del curso consiste en realizar analitica de datos en tiempo real con twitter, obteniendo los tweets mas relevantes y que palabras están siendo mas usadas en estos tweets, visualizandolos en un navegador, entre mas se repita la palabra , mas grande se verá la visualización. 
 
+**Arquitectura preliminar de datos**
+
+
+![arch](https://user-images.githubusercontent.com/26205558/48113709-27db7e00-e22a-11e8-8705-d1c672143915.jpeg)
+
 **Fuentes y naturaleza de datos**
 
  Para nuestro caso de estudio, los datos son obtenidos a través de un streaming por parte de twitter, estos datos no son mas que tweets , que corresponden a la cuenta de la cual se estan consumiendo las credenciales. Todos los datos son en tiempo real, esto quiere decir que se obtienen datos como: 
