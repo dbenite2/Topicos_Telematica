@@ -13,23 +13,22 @@ Al realizar la busqueda de casos de estudios similares a la problematica propues
 
 **Fuentes y naturaleza de datos**
 
-Los datos fueron suministrados por Netflix a través de la reconocida pagina de data scientists Kaggle, con el fin de realizar un concurso de data mining. Los datos fueron tomados para el proyecto y estos se encontraban divididos en 2 formas: Las peliculas con su información basica, y una combinación de datos con la puntuación de las peliculas dada por los usuarios.
-Los dataset vinieron en dos formatos: csv y txt ;  La información de las peliculas, llamado movie_titles , era la que estaba en formato csv, mientras que los datos combinados , llamado combined_data_2, la cual era la que estaba en formato txt.
-Los datos contenian en el archivo movie_titles lo siguiente 
-* nombre de la pelicula 
-* fecha del lanzamiento 
-* id(por parte de Netflix) de la pelicula.
-
-Los datos contenidos en el archivo combined_data_2 fueron los siguientes: 
-* id de la pelicula 
-* nombre de la pelicula 
-* fecha de lanzamiento 
-* puntuación por usuario 
-* fecha de puntuación 
+ Para nuestro caso de estudio, los datos son obtenidos a través de un streaming por parte de twitter, estos datos no son mas que tweets , que corresponden a la cuenta de la cual se estan consumiendo las credenciales. Todos los datos son en tiempo real, esto quiere decir que se obtienen datos como: 
+ * tendencias en la red 
+ * conversaciones de usuarios (hilos y comentarios)
+ * recomendaciones y busquedas   
+ Todos estos datos se van recibiendo instantaneamente a medida que llegan al feed de la cuenta. 
+ Los naturaleza de los datos no es mas que Strings, que se modifican a tuplas y topologias en su posterior procesamiento.
+ Con respecto a la tecnología a utilizar, se utiliza Twitter como fuente principal y Storm para su procesamiento.
 
 **Sistema de ingesta de datos** 
 
 Para la ingesta de datos tomamos la información de dos fuentes en total, las cuales venían presentes en dos archivos con formato “txt”, para este proyecto en específico los dos archivos tenían un peso de aproximadamente 0,5 GB y 0,2 GB respectivamente. Para poder pasar a hacer la ingesta, primero se debía hacer una limpieza de datos ya que contenían información irrelevante para su análisis, después de la limpieza transformar esa información en archivos JSON para poder hacer la carga en la base de datos MongoDB, todo esto se hizo a través de scripts en PHP que hacían la limpieza y transformación de la data. La carga de la data se hizo por medio de la tecnología Studio 3T que nos permite la importación y exportación de data a una base de datos mediante archivos JSON.
+
+**Almacenamiento de los datos** 
+
+Para el almacenamiento de los datos, no se hace uso de ninguna tecnología, puesto que los datos son recibidos en tiempo real y son procesados y analizados en el instante, por lo que no se logra alcanzar a almacenar estos datos, sin embargo, es importante tener en cuenta que , a pesar de que los datos no son almacenados, el analizis si debe de ser documentado para así poder hacer un buen uso de este. 
+No se utiliza ninguna tecnología.
 
 **Análisis de datos**
 
