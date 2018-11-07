@@ -34,11 +34,19 @@ class TweetTopology
 
     // now create the tweet spout with the credentials
     TweetSpout tweetSpout = new TweetSpout(
-        "FM3XYCkK6VROg9tT0AwgO2aT9",
-        "n7pCzLTU409Tu0GEzbEMY7uNCsTrDzkSZdxaEd1TuGtVjOipa8",
-        "106575202-atb95fQu93yu8zLKuBYpeOtm1DwUR60oXJ3BKqdI",
-        "uxUWr1b3f5B5dzkORM41zoQFOg6aZEoTz7lq15DUDasvb"
+       "1JfDVPVlLeAvwSIQ9ycHokggD",
+       "wbDuZSh1YbhFIvFSgQNSpI0KWRZgm20XoueiOCpQb9qXDuj0wV",
+       "349328529-tWKxzrLLhprSkiVZLvRBoMMCx8ELbiPFJfdUphUP",
+       "oNhbfekGAkdShshRvlUhOU9I0GQpQFKPdUnGNOVMUz2XS"
     );
+    /*
+     *TweetSpout tweetSpout = new TweetSpout(
+     *  "FM3XYCkK6VROg9tT0AwgO2aT9",
+     *  "n7pCzLTU409Tu0GEzbEMY7uNCsTrDzkSZdxaEd1TuGtVjOipa8",
+     *  "106575202-atb95fQu93yu8zLKuBYpeOtm1DwUR60oXJ3BKqdI",
+     *  "uxUWr1b3f5B5dzkORM41zoQFOg6aZEoTz7lq15DUDasvb"
+     * );
+     */
 
     // attach the tweet spout to the topology - parallelism of 1
     builder.setSpout("tweet-spout", tweetSpout, 1);
